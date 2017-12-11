@@ -392,7 +392,7 @@ plot_figs = function(sim1, sim2, sim3, sim4, i, h=10, w=6, res=75, effect_size=c
 
 	par(fig = c(0, 1, 0, 1), oma = c(0, 0, 0, 0), mar = c(0, 0, 0, 0), new = TRUE)
 	plot(0, 0, type = "n", bty = "n", xaxt = "n", yaxt = "n")
-	legend("bottom",pch=c(15,16,17),lwd=c(1,1),col=c("blue","red","black"), legend=c(paste0("Small (",effect_size[1],")"),paste0("Medium (",effect_size[2],")"),paste0("Large (",effect_size[3],")")),title=expression(bold("Effect size")), xpd = TRUE, inset = c(0,0), bty = "n", horiz=TRUE, cex=1.7)
+	legend("bottom",pch=c(15,16,17),lwd=c(1,1),col=c("blue","red","black"), legend=c(paste0("Small (",effect_size[1],")"),paste0("Medium (",effect_size[2],")"),paste0("Large (",effect_size[3],")")),title=expression(bold("Effect size (" ~ R^2 ~ ")")), xpd = TRUE, inset = c(0,0), bty = "n", horiz=TRUE, cex=1.7)
 	x = c(-.85,-.85,-.85,-.85)
 	y = .80-.475*c(0,1,2,3)
 	text(x,y,labels=c("Symmetric E\nc=.5","Left-skewed E\nc=.5","Symmetric E\nc=.25","Left-skewed E\nc=.25"), cex=1.6,font=2)
